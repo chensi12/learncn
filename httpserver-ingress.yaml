@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: httpserver
+  namespace: default
+spec:
+  rules:
+  - host: httpserver.learncn.test
+    http:
+      paths:
+      - backend:
+          serviceName: httpserver
+          servicePort: 8080
+        path: /
+        #pathType: ImplementationSpecific
