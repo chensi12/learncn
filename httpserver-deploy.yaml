@@ -25,7 +25,7 @@ spec:
         app: httpserver
     spec:
       containers:
-      - image: reg-test.xxx.com/yunwei/httpserver:v1.0.1
+      - image: reg-test.joinpay.com/public/httpserver:v1.10.0
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
