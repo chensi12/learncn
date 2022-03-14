@@ -3,14 +3,15 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
-    prometheus.io/scrape: "true"
+    prometheus.io/appscrape: "true"
+    prometheus.io/path: /metrics
     prometheus.io/port: "8080"
   labels:
     app: httpserver
   name: httpserver
   namespace: default
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: httpserver
@@ -21,6 +22,10 @@ spec:
     type: RollingUpdate
   template:
     metadata:
+      annotations:
+        prometheus.io/appscrape: "true"
+        prometheus.io/path: /metrics
+        prometheus.io/port: "8080"
       labels:
         app: httpserver
     spec:
