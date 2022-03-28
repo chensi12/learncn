@@ -11,9 +11,14 @@ spec:
       number: 80
       name: http
       protocol: HTTP
+    hosts:
+    - "learncn.chensi.com"
   - port:
       number: 443
       name: https
       protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: learncn-credential
     hosts:
     - "learncn.chensi.com"
