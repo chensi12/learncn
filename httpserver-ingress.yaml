@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: httpserver
-  namespace: default
+  namespace: learncn
 spec:
   rules:
   - host: httpserver.learncn.test

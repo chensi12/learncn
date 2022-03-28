@@ -9,7 +9,7 @@ metadata:
   labels:
     app: httpserver
   name: httpserver
-  namespace: default
+  namespace: learncn
 spec:
   replicas: 1
   selector:
