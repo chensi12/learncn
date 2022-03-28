@@ -1,8 +1,11 @@
 # 模块十一作业
 安装了istio
 配置了httpserver 服务以 Istio Ingress Gateway 的形式发布
+创建了tls secret，以https访问服务
 ![image](https://user-images.githubusercontent.com/19473836/160321150-7a7c3917-f9e3-416f-846f-cf4c9d9e9cb4.png)
 ![image](https://user-images.githubusercontent.com/19473836/160321195-04eca6ef-0f07-460a-9eb4-f7e609fbcc28.png)
+![image](https://user-images.githubusercontent.com/19473836/160363329-6471fc91-01c4-4702-97a4-cc67082bfeb2.png)
+
 
 # 模块十作业
 为 HTTPServer 添加 0-2 秒的随机延时；
